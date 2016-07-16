@@ -66,7 +66,7 @@ class Upload {
             if (move_uploaded_file($file['tmp_name'], $path . "/" . $finalName)) {
                 return $finalName;
             } else {
-                echo "";
+                return "";
             }
         }
     }
